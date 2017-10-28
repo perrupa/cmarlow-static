@@ -5,7 +5,7 @@ const Photos = ({ photos }) =>
   <div>
     { photos.map(photo =>
         <img
-          src={`/images/high-park/${photo}`}
+          src={`/cmarlow-static/images/high-park/${photo}`}
         />)}
   </div>
 
