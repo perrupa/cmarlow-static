@@ -1,7 +1,11 @@
 module.exports = {
   pathPrefix: '/cmarlow-static',
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'CMarlow.com',
+    author: 'Chris Marlow',
   },
-  plugins: ['gatsby-plugin-react-helmet'],
+  plugins: [
+    'gatsby-plugin-catch-links',
+    'gatsby-plugin-react-helmet'
+  ],
 }
