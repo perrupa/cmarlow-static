@@ -5,6 +5,7 @@ module.exports = {
     author: 'Chris Marlow',
   },
   plugins: [
+    `gatsby-plugin-sass`,
     'gatsby-plugin-catch-links',
     'gatsby-plugin-react-helmet'
   ],
