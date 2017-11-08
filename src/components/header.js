@@ -2,12 +2,10 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 export default () => (
-  <div style={{textAlign: 'center'}}>
-    <h1 style={{
-      margin: ".3em",
-    }}>
+  <div className="header">
+    <h1 className="header__title">
       <Link to="/" >
-        CMarlow
+        Chris Marlow
       </Link>
     </h1>
   </div>

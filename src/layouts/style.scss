@@ -13,9 +13,24 @@ body {
   font-family: 'Lora', serif;
   background-color: #FFF;
   color: #333;
+  padding-top: 5em;
 }
 
 a {
   color: #555;
   text-decoration: underline;
+}
+
+// Header
+.header {
+  // margin: 1em auto 2em;
+  position: fixed;
+  top: 1em;
+  left: 1em;
+  background-color: #FFF;
+  padding: 5px;
+}
+.header__title {
+  text-align: center;
+  margin-bottom: 0;
 }
