@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Lora|Open+Sans');
 
 h1, h2, h3, h4 {
-  text-align: left;
   font-family: 'Open Sans', sans-serif;
-  margin: 2em auto;
+  margin: 1.3em auto 0.8em;
   a {
     color: inherit;
     text-decoration: none;
@@ -11,12 +10,14 @@ h1, h2, h3, h4 {
 }
 
 body {
-  font-family: 'Lora', serif;
+  padding: 1em 5em 3em;
+  min-height: 100vu;
+  border: 1em #333 solid;
   background-color: #FFF;
   color: #333;
-  padding: 1em 5em 3em;
-  border: 1em #333 solid;
-  min-height: 100vu;
+
+  font-family: 'Lora', serif;
+  text-align: center;
 }
 
 a {
