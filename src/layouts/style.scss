@@ -3,6 +3,7 @@
 h1, h2, h3, h4 {
   text-align: left;
   font-family: 'Open Sans', sans-serif;
+  margin: 2em auto;
   a {
     color: inherit;
     text-decoration: none;
@@ -13,7 +14,9 @@ body {
   font-family: 'Lora', serif;
   background-color: #FFF;
   color: #333;
-  padding: 5em 1em 1em;
+  padding: 1em 5em 3em;
+  border: 1em #333 solid;
+  min-height: 100vu;
 }
 
 a {
@@ -21,16 +24,6 @@ a {
   text-decoration: underline;
 }
 
-// Header
-.header {
-  // margin: 1em auto 2em;
-  position: fixed;
-  top: 1em;
-  left: 1em;
-  background-color: #FFF;
-  padding: 5px;
-}
-.header__title {
-  text-align: center;
-  margin-bottom: 0;
+img {
+  width: 100%;
 }
