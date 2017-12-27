@@ -12,6 +12,7 @@ h1, h2, h3, h4 {
 body {
   padding: 1em 5em 3em;
   min-height: 100vu;
+  height: calc(100vh - 1em - 3em - 1*2em);
   border: 1em #333 solid;
   background-color: #FFF;
   color: #333;
