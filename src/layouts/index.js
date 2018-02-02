@@ -4,7 +4,6 @@ import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 
 // Styles
-import 'normalize.css/normalize.css'
 import './style.scss'
 
 // Components
