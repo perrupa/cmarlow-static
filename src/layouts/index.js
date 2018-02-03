@@ -4,10 +4,10 @@ import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 
 // Styles
-import '../styles/main.scss'
+import 'styles/main.scss'
 
 // Components
-import Header from '../components/header'
+import Header from 'components/header'
 
 const TemplateWrapper = ({ children }) => {
   return (

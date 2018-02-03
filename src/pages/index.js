@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import Link from 'gatsby-link'
-import PostList from '../components/Post-list'
+import PostList from 'components/Post-list'
 
 class IndexPage extends Component {
   render() {

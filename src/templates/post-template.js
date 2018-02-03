@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/post.scss";
+import "styles/post.scss";
 
 export default function Template({ data }) {
   const {markdownRemark: { frontmatter, html }} = data;
