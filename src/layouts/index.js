@@ -4,7 +4,7 @@ import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 
 // Styles
-import './style.scss'
+import '../styles/main.scss'
 
 // Components
 import Header from '../components/header'
