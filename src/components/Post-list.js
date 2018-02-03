@@ -9,7 +9,7 @@ export default ({ posts, data }) => {
 
   return (
     <section>
-      <h1>Posts</h1>
+      <h2>Posts</h2>
       <ul>
         {posts.map(({node}) =>
           <li><Link to={node.frontmatter.path}>{node.frontmatter.title}</Link></li>
