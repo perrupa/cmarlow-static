@@ -10,6 +10,7 @@ export default ({ posts, data }) => {
   return (
     <section>
       <h2>Posts</h2>
+      <p>Some things I found out that I felt worth writing down.</p>
       <ul>
         {posts.map(({node}) =>
           <li><Link to={node.frontmatter.path}>{node.frontmatter.title}</Link></li>
