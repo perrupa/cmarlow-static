@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono|Rubik');
+
+$brand: rgb(221, 68, 36);
+
+body {
+  padding: 1em 5em 3em;
+  background-color: #DDD;
+  color: #333;
+
+  font-family: 'Roboto Mono', monospace;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 2.5em;
+  color: $brand;
+  margin: 1.3em auto 0.8em;
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+p {
+  margin-bottom: 2em;
+}
+
+ul, ol {
+  -webkit-padding-start: 0;
+}
+
+li {
+  display: inline-block;
+  list-style-type: none;
+  margin-right: 1em;
+}
+
+a {
+  color: #555;
+  text-decoration: underline;
+}
+
+img {
+  width: auto;
+  max-width: 90%;
+  max-height: 65vh;
+  margin-bottom: 1em;
+}
