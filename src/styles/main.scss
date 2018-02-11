@@ -1,14 +1,6 @@
-$brand: rgb(221, 68, 36);
-
+@import 'colours';
 @import 'typography';
-
-body {
-  padding: 0;
-  margin: 1em;
-  background-color: #DDD;
-  color: #333;
-
-}
+@import 'layout';
 
 h1, h2, h3, h4 {
   color: $brand;
@@ -26,7 +18,13 @@ li {
 
 a {
   color: #555;
-  text-decoration: underline;
+  text-decoration: none;
+  border-bottom: 1px solid $brand;
+
+  &:hover {
+    color: $brand;
+    border-bottom-width: 2px;
+  }
 }
 
 img {

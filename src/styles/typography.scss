@@ -17,6 +17,10 @@ h1, h2, h3, h4 {
   margin: 1.3em auto 0.8em;
   padding-left: .4em;
   border-left: .2em solid $brand;
+
+  &:first-child {
+    margin-bottom: .3em;
+  }
 }
 
 h1 {

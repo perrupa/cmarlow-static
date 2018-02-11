@@ -11,7 +11,7 @@ import Header from 'components/header'
 
 const TemplateWrapper = ({ children }) => {
   return (
-    <section>
+    <div>
 
       <Helmet title="C:\Marlow>" meta={[
         { name: 'description', content: '' },
@@ -26,7 +26,7 @@ const TemplateWrapper = ({ children }) => {
         {children()}
       </article>
 
-    </section>
+    </div>
   )
 }
 
