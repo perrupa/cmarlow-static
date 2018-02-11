@@ -1,9 +1,17 @@
+@import 'colours';
+
 .blog-post-container {
   text-align: left;
-  margin: auto;
-  padding: 1em;
 }
 
-.blog-post {
-  background-color: #FFF;
+h1.blog-post__title {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
 }
+
+.blog-post__date {
+  font-size: .5em;
+  vertical-align: top;
+}
+

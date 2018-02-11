@@ -1,35 +1,50 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono|Rubik');
+@import 'functions';
+
+$oswald: 'Oswald';
+$lato: 'Lato';
+$pt: 'PT Mono';
+$roboto: 'Roboto Mono';
+$rubik: 'Rubik';
+$questrial: 'Questrial';
+$playfair: 'Playfair Display';
+
+//$fonts:
+@include gwf(
+  $playfair,
+  $oswald,
+  $lato,
+  $pt,
+  $roboto,
+  $rubik,
+  $questrial
+)
+
+$title-font: $questrial, sans-serif;
+$body-font: $questrial, sans-serif;
+$code-font: $pt, monospace;
 
 html {
+  font-family: $body-font;
   font-size: 1.25em;
 }
 
 body {
-  font-family: 'Roboto Mono', monospace;
   font-weight: 400;
   line-height: 1.45;
 }
 
+code {
+  font-family: $code-font;
+}
+
 // Headings
 h1, h2, h3, h4 {
-  font-family: 'Rubik', sans-serif;
-  font-size: 2.5em;
-  margin: 1.3em auto 0.8em;
-  padding-left: .4em;
-  border-left: .2em solid $brand;
-
-  &:first-child {
-    margin-bottom: .3em;
-  }
+  font-family: $title-font;
+  font-weight: 800;
 }
 
 h1 {
-  margin-top: 0;
   font-size: 3.998em;
-  padding: 0;
-  border: 0;
-  padding-top: .4em;
-  border-top: .2em solid $brand;
 }
 
 h2 {

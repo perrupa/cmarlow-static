@@ -1,9 +1,8 @@
-@import '../../styles/colours';
-
 .header__title {
-  padding-left: .3em;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  border-width: 0;
   font-size: 4em;
-  vertical-align: middle;
-  background-color: $brand;
-  color: #eee;
 }
