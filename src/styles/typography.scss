@@ -7,6 +7,7 @@ $roboto: 'Roboto Mono';
 $rubik: 'Rubik';
 $questrial: 'Questrial';
 $playfair: 'Playfair Display';
+$pmarker: 'Permanent Marker';
 
 //$fonts:
 @include gwf(
@@ -16,10 +17,11 @@ $playfair: 'Playfair Display';
   $pt,
   $roboto,
   $rubik,
+  $pmarker,
   $questrial
 )
 
-$title-font: $questrial, sans-serif;
+$title-font: $pmarker, sans-serif;
 $body-font: $questrial, sans-serif;
 $code-font: $pt, monospace;
 

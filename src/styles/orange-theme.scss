@@ -28,10 +28,6 @@ h1, h2, h3, h4 {
     color: inherit;
     border-width: 0;
   }
-
-  &:first-child {
-    margin-bottom: .3em;
-  }
 }
 
 h1 {
@@ -43,11 +39,5 @@ h1 {
 }
 
 h2, h3, h4 {
-  border-left: .3em solid $brand;
-  padding-left: .5em;
-}
-
-.header__title {
-  background-color: $brand;
-  color: #fff;
+  margin: 1.9em auto 0.5em;
 }
