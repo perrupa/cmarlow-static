@@ -12,20 +12,19 @@ import Header from 'components/header'
 const TemplateWrapper = ({ children }) => {
   return (
     <div>
-
-      <Helmet title="C:\Marlow>" meta={[
-        { name: 'description', content: '' },
-        { name: 'keywords', content: '' },
-      ]} />
+      <Helmet
+        title="C:\Marlow>"
+        meta={[
+          { name: 'description', content: '' },
+          { name: 'keywords', content: '' },
+        ]}
+      />
 
       <Header>
         <Link to="/">Chris Marlow</Link>
       </Header>
 
-      <section>
-        {children()}
-      </section>
-
+      <section>{children()}</section>
     </div>
   )
 }

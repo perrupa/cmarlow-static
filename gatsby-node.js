@@ -1,4 +1,4 @@
-const path = require("path");
+const path = require("path")
 const query = `{
   allMarkdownRemark(
     sort: { order: DESC, fields: [frontmatter___date] }
@@ -20,13 +20,13 @@ const query = `{
 }`
 
 exports.createPages = ({ boundActionCreators, graphql }) => {
-  const { createPage } = boundActionCreators;
+  const { createPage } = boundActionCreators
 
-  const blogPostTemplate = path.resolve(`src/templates/post-template.js`);
+  const blogPostTemplate = path.resolve(`src/templates/post-template.js`)
 
   return graphql(query).then(result => {
     if (result.errors) {
-      return Promise.reject(result.errors);
+      return Promise.reject(result.errors)
     }
 
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
@@ -34,10 +34,10 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
         path: node.frontmatter.path,
         component: blogPostTemplate,
         context: {}, // additional data can be passed via context
-      });
-    });
-  });
-};
+      })
+    })
+  })
+}
 
 exports.modifyWebpackConfig = ({ config, stage }) => {
   config.merge({

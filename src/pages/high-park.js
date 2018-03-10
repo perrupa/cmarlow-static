@@ -1,9 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-const rootPath = (process.env.NODE_ENV === `production`) ?
-  '/cmarlow-static'
-  : ''
+const rootPath = process.env.NODE_ENV === `production` ? '/cmarlow-static' : ''
 const photos = [
   'DSCF6519.jpg',
   'DSCF6557.jpg',
@@ -17,13 +15,13 @@ const photos = [
   'DSCF6645-2.jpg',
 ]
 
-const Photos = ({ photos }) =>
+const Photos = ({ photos }) => (
   <div>
-    { photos
-        .map(photo => `${rootPath}/images/high-park/${photo}`)
-        .map(url => <img src={url} />)
-    }
+    {photos
+      .map(photo => `${rootPath}/images/high-park/${photo}`)
+      .map(url => <img src={url} />)}
   </div>
+)
 
 const SecondPage = () => (
   <div>
