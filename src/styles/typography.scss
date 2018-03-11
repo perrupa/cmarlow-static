@@ -11,7 +11,6 @@ $pmarker: 'Permanent Marker';
 
 //$fonts:
 @include gwf(
-  $playfair,
   $oswald,
   $lato,
   $pt,
@@ -21,8 +20,8 @@ $pmarker: 'Permanent Marker';
   $questrial
 )
 
-$title-font: $pmarker, sans-serif;
-$body-font: $questrial, sans-serif;
+$title-font: $rubik, sans-serif;
+$body-font: $roboto, sans-serif;
 $code-font: $pt, monospace;
 
 html {
@@ -34,6 +33,9 @@ body {
   font-weight: 400;
   line-height: 1.45;
 }
+p {
+  letter-spacing: -1px;
+}
 
 code {
   font-family: $code-font;
@@ -42,6 +44,7 @@ code {
 // Headings
 h1, h2, h3, h4 {
   font-family: $title-font;
+  letter-spacing: -3px;
   font-weight: 800;
 }
 
