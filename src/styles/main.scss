@@ -16,10 +16,11 @@ li {
 }
 
 img {
-  width: auto;
-  max-width: 90%;
-  max-height: 65vh;
-  margin-bottom: 1em;
+  display: block;
+  margin: auto;;
+  max-width: 95%;
+  max-height: 85vh;
+  margin-bottom: 1.5em;
 }
 
 pre {
