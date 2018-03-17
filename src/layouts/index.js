@@ -20,11 +20,13 @@ const TemplateWrapper = ({ children }) => {
         ]}
       />
 
-      <Header>
-        <Link to="/">Chris Marlow</Link>
-      </Header>
+      <section className='container'>
+        <Header>
+          <Link to="/">Chris Marlow</Link>
+        </Header>
 
-      <section className='container'>{children()}</section>
+        {children()}
+      </section>
     </div>
   )
 }
