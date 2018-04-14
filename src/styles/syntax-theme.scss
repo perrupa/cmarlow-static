@@ -1,0 +1,29 @@
+// Colors
+$code: #454390;;
+$value: #e6d06c;
+$keyword: #f12769;
+$operator: #f00;
+$parens: #aaa;
+$comment: #999;
+
+$code-background:          transparent;
+$code-color:               $code;
+$code-color-fade:          $parens;
+$code-text-shadow:         none;
+$code-box-shadow:          none;
+$code-border:              none;
+
+$code-color-comment:        $comment;
+$code-color-keyword:        $keyword;
+$code-color-value:          $code;
+$code-color-string:         $value;
+$code-color-name:           $value;
+$code-color-number:         $operator;
+$code-color-variable:       #fff;
+$code-color-selector:       #a6e22d;
+
+$code-tab-size: 2;
+$code-font-size: 		18px	!default;
+$code-line-height:		1.7;
+
+@import "prism";
