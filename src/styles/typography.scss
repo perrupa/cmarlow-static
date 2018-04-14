@@ -22,7 +22,7 @@ $pmarker: 'Permanent Marker';
 
 $title-font: $rubik, sans-serif;
 $body-font: $roboto, sans-serif;
-$code-font: $pt, monospace;
+$monospaced-font: $pt, monospace;
 
 html {
   font-family: $body-font;
@@ -38,7 +38,7 @@ p {
 }
 
 code {
-  font-family: $code-font;
+  font-family: $monospaced-font;
 }
 
 // Headings
