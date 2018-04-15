@@ -8,6 +8,10 @@
       "path----557518bd178906f8d58a.js",
       "path----557518bd178906f8d58a.js.map"
     ],
+    "path---posts-2018-04-14-prism-js-and-and-scss-syntax-theme": [
+      "path---posts-2018-04-14-prism-js-and-and-scss-syntax-theme-751bfc4f58659c3b36f6.js",
+      "path---posts-2018-04-14-prism-js-and-and-scss-syntax-theme-751bfc4f58659c3b36f6.js.map"
+    ],
     "component---src-layouts-index-js": [
       "component---src-layouts-index-js-9d65411b311af212f747.js",
       "component---src-layouts-index-js-9d65411b311af212f747.js.map"
@@ -17,8 +21,8 @@
       "path---posts-2018-01-04-test-cd21d6bacb0f5fe90c35.js.map"
     ],
     "path---index": [
-      "path---index-1e051d6951ed31ba63dc.js",
-      "path---index-1e051d6951ed31ba63dc.js.map"
+      "path---index-948c676e90640bd0700a.js",
+      "path---index-948c676e90640bd0700a.js.map"
     ],
     "path---high-park": [
       "path---high-park-a0e39f21c11f6a62c5ab.js",
@@ -41,12 +45,12 @@
       "path---404-html-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-templates-post-template-js": [
-      "component---src-templates-post-template-js-e14f8886fbf78ab4da1b.js",
-      "component---src-templates-post-template-js-e14f8886fbf78ab4da1b.js.map"
+      "component---src-templates-post-template-js-102d9df0db7ec4b84412.js",
+      "component---src-templates-post-template-js-102d9df0db7ec4b84412.js.map"
     ],
     "app": [
-      "app-ce7bde0a045fd96dd327.js",
-      "app-ce7bde0a045fd96dd327.js.map"
+      "app-4a84a0b8ad24aec7a6d7.js",
+      "app-4a84a0b8ad24aec7a6d7.js.map"
     ],
     "path---404": [
       "path---404-a0e39f21c11f6a62c5ab.js",
