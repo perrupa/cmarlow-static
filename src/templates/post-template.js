@@ -13,10 +13,10 @@ export default function Template({ data }) {
   return (
     <div className="blog-post-container">
       <div className="blog-post">
-        <h1 className="blog-post__title">
+        <h2 className="blog-post__title">
           {frontmatter.title}
           <span className="blog-post__date">{dateString}</span>
-        </h1>
+        </h2>
         <div
           className="blog-post-content"
           dangerouslySetInnerHTML={{ __html: html }}
