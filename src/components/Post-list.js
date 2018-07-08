@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Link from 'gatsby-link'
 
-export default ({ posts, data }) => {
+export const PostList = ({ posts, data }) => {
   const postTitles = posts.map(p => p.node.frontmatter.title)
 
   return (

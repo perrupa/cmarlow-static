@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Link from 'gatsby-link'
-import PostList from 'components/Post-list'
+import { PostList } from 'components/post-list'
+import { SocialMediaIcons } from 'components/social-media-icons'
 
 class IndexPage extends Component {
   render() {
@@ -12,34 +13,17 @@ class IndexPage extends Component {
             Senior Front End Developer @{' '}
             <a href="https://shopify.ca/">Shopify</a>.
           </p>
-
           <p>I uncomplicate things.</p>
-
-          <ul>
-            <li>
-              <a href="http://www.twitter.com/perrupa">@perrupa on Twitter</a>
-            </li>
-            <li>
-              <a href="http://www.instagram.com/perrupa">
-                @perrupa on Instagram
-              </a>
-            </li>
-            <li>
-              <a href="http://www.facebook.com/christopher.marlow">
-                @christopher.marlow on Facebook
-              </a>
-            </li>
-          </ul>
         </section>
 
         <section>
-          <h2>Pages</h2>
-          <p>
-            <Link to="/high-park/">Some photos that I took in High Park.</Link>
-          </p>
+          <PostList posts={this.getPosts()} />
+          <Link to="/high-park/">Some photos that I took in High Park.</Link>
         </section>
 
-        <PostList posts={this.getPosts()} />
+        <section>
+          <SocialMediaIcons />
+        </section>
       </div>
     )
   }
