@@ -1,19 +1,20 @@
 import React from 'react';
+import Link from 'components/link'
 
 export const SocialMediaIcons = () =>
   <ul>
     <li>
-      <a href="http://www.twitter.com/perrupa">@perrupa on Twitter</a>
+      <Link href="http://www.twitter.com/perrupa">@perrupa on Twitter</Link>
     </li>
     <li>
-      <a href="http://www.instagram.com/perrupa">
+      <Link href="http://www.instagram.com/perrupa">
         @perrupa on Instagram
-      </a>
+      </Link>
     </li>
     <li>
-      <a href="http://www.facebook.com/christopher.marlow">
+      <Link href="http://www.facebook.com/christopher.marlow">
         @christopher.marlow on Facebook
-      </a>
+      </Link>
     </li>
   </ul>
 

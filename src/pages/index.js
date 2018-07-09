@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Link from 'gatsby-link'
+import Link from 'components/link'
 import { PostList } from 'components/post-list'
 import { SocialMediaIcons } from 'components/social-media-icons'
 
@@ -11,7 +11,7 @@ class IndexPage extends Component {
         <section>
           <p>
             Senior Front End Developer @{' '}
-            <a href="https://shopify.ca/">Shopify</a>.
+            <Link href="https://shopify.ca/">Shopify</Link>.
           </p>
           <p>I uncomplicate things.</p>
         </section>
