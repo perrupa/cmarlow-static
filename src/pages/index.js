@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Link from 'components/link'
+import { Section } from 'components/section'
 import { PostList } from 'components/post-list'
 import { SocialMediaIcons } from 'components/social-media-icons'
 
@@ -8,22 +9,28 @@ class IndexPage extends Component {
     const posts = []
     return (
       <div className="page-index">
-        <section>
-          <p>
-            Senior Front End Developer @{' '}
-            <Link href="https://shopify.ca/">Shopify</Link>.
-          </p>
-          <p>I uncomplicate things.</p>
-        </section>
+        <Section>
+          <ul>
+            <li>
+              Senior Front End Developer @{' '}
+              <Link href="https://shopify.ca/">Shopify</Link>.
+            </li>
+            <li>Amateur Photographer.</li>
+          </ul>
+        </Section>
 
-        <section>
+        <Section>
+          <p>I uncomplicate things.</p>
+        </Section>
+
+        <Section>
           <PostList posts={this.getPosts()} />
           <Link to="/high-park/">Some photos that I took in High Park.</Link>
-        </section>
+        </Section>
 
-        <section>
+        <Section>
           <SocialMediaIcons />
-        </section>
+        </Section>
       </div>
     )
   }
