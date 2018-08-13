@@ -10,13 +10,10 @@ class IndexPage extends Component {
     return (
       <div className="page-index">
         <Section>
-          <ul>
-            <li>
-              Senior Front End Developer @{' '}
-              <Link href="https://shopify.ca/">Shopify</Link>.
-            </li>
-            <li>Amateur Photographer.</li>
-          </ul>
+          <p>
+            Senior Front End Developer @ <Link href="https://shopify.ca/">Shopify</Link>.
+            Amateur Photographer.
+          </p>
         </Section>
 
         <Section>

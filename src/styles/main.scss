@@ -1,18 +1,10 @@
-@import 'colours';
 @import 'typography';
-@import 'layout';
 @import 'orange-theme';
 
-$link_colour: #333;
-
-a {
-  color: $link_colour;
-}
-
 li {
-  display: inline-block;
   list-style-type: none;
   margin-right: 1em;
+  line-height: 1.8;
 }
 
 img {
