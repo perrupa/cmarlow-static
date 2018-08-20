@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'components/link'
 
-export const SocialMediaIcons = () =>
+const SocialMediaIcons = () =>
   <ul>
     <li>
       <Link href="http://www.twitter.com/perrupa">@perrupa on Twitter</Link>
@@ -18,3 +18,4 @@ export const SocialMediaIcons = () =>
     </li>
   </ul>
 
+export default SocialMediaIcons

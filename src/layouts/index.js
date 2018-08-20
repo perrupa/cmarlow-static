@@ -1,7 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import Link from 'gatsby-link'
+import Link from 'components/link'
+import { Container } from 'components/Container'
 
 // Styles
 import 'styles/main.scss'
@@ -20,13 +21,13 @@ const TemplateWrapper = ({ children }) => {
         ]}
       />
 
-      <section className='container'>
+      <Container>
         <Header>
-          <Link to="/">Chris Marlow</Link>
+          <Link style={{ color: '#333' }} to="/">Chris Marlow</Link>
         </Header>
 
         {children()}
-      </section>
+      </Container>
     </div>
   )
 }

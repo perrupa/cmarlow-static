@@ -1,5 +1,13 @@
+@import 'colours';
 @import 'typography';
-@import 'orange-theme';
+
+h1, h2, h3, h4 {
+  color: $brand;
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
 
 li {
   list-style-type: none;

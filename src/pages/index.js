@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Link from 'components/link'
 import { Section } from 'components/section'
 import { PostList } from 'components/post-list'
-import { SocialMediaIcons } from 'components/social-media-icons'
+import SocialMediaIcons from 'components/social-media-icons'
 
 class IndexPage extends Component {
   render() {
