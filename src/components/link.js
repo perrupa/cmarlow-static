@@ -4,7 +4,7 @@ import {brandColor} from 'styles/colors'
 
 const LocalLink = ({children, ...props}) =>
   <GatsbyLink
-    style={{ color: brandColor }}
+    style={{ color: brandColor, ...props.style }}
     {...props}
   >
     {children}
@@ -12,7 +12,7 @@ const LocalLink = ({children, ...props}) =>
 
 const ExternalLink = ({children, ...props}) =>
   <a
-    style={{ color: brandColor }}
+    style={{ color: brandColor, ...props.style }}
     {...props}
   >
     {children}

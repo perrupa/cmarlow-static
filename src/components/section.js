@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components';
 
 const SectionTag = styled.section`
-  margin-top: 1em;
+  margin-bottom: 2em;
 `
 
 const Section = ({children, ...props}) =>

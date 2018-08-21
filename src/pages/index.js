@@ -8,7 +8,7 @@ class IndexPage extends Component {
   render() {
     const posts = []
     return (
-      <div className="page-index">
+      <div>
         <Section>
           <p>
             Senior Front End Developer @ <Link href="https://shopify.ca/">Shopify</Link>.
@@ -20,10 +20,7 @@ class IndexPage extends Component {
           <p>I uncomplicate things.</p>
         </Section>
 
-        <Section>
-          <PostList posts={this.getPosts()} />
-          <Link to="/high-park/">Some photos that I took in High Park.</Link>
-        </Section>
+        <PostList posts={this.getPosts()} />
 
         <Section>
           <SocialMediaIcons />
