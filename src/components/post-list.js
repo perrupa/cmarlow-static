@@ -1,13 +1,12 @@
 import React, { Component } from 'react'
 import Link from 'components/link'
-import { Section } from 'components/section'
 
 
 export const PostList = ({ posts, data }) => {
   const postTitles = posts.map(p => p.node.frontmatter.title)
 
   return (
-    <Section>
+    <div>
       <h2>Posts</h2>
       <p>Some things I found out that I felt worth writing down.</p>
       <ol>
@@ -20,6 +19,6 @@ export const PostList = ({ posts, data }) => {
           <Link to="/high-park/">Some photos that I took in High Park.</Link>
         </li>
       </ol>
-    </Section>
+    </div>
   )
 }

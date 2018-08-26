@@ -20,7 +20,9 @@ class IndexPage extends Component {
           <p>I uncomplicate things.</p>
         </Section>
 
-        <PostList posts={this.getPosts()} />
+        <Section>
+          <PostList posts={this.getPosts()} />
+        </Section>
 
         <Section>
           <SocialMediaIcons />
