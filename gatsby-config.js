@@ -5,6 +5,7 @@ module.exports = {
     author: 'Chris Marlow',
   },
   plugins: [
+    'gatsby-plugin-styled-components',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
