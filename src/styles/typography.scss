@@ -21,8 +21,8 @@ $pmarker: 'Permanent Marker';
 )
 
 $title-font: $rubik, sans-serif;
-$body-font: $roboto, sans-serif;
-$monospaced-font: $pt, monospace;
+$body-font: $pt, sans-serif;
+$monospaced-font: $rubik, monospace;
 
 html {
   font-family: $body-font;
@@ -30,11 +30,12 @@ html {
 }
 
 body {
-  font-weight: 400;
-  line-height: 1.45;
+  font-weight: 300;
+  line-height: 1.65;
 }
+
 p {
-  letter-spacing: -1px;
+  // letter-spacing: -1px;
 }
 
 code {
