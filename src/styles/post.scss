@@ -1,17 +1,7 @@
 @import 'syntax-theme';
 
-.blog-post-container {
-  text-align: left;
-}
-
 h1.blog-post__title {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap-reverse;
 }
-
-.blog-post__date {
-  font-size: .5em;
-  vertical-align: top;
-}
-

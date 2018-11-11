@@ -1,4 +1,5 @@
 @import 'functions';
+@import 'colours';
 
 $oswald: 'Oswald';
 $lato: 'Lato';
@@ -20,9 +21,9 @@ $pmarker: 'Permanent Marker';
   $questrial
 )
 
-$title-font: $rubik, sans-serif;
-$body-font: $pt, sans-serif;
-$monospaced-font: $rubik, monospace;
+$title-font: $pmarker, sans-serif;
+$body-font: $roboto, sans-serif;
+$monospaced-font: $pt, monospace;
 
 html {
   font-family: $body-font;
@@ -38,15 +39,22 @@ p {
   // letter-spacing: -1px;
 }
 
-code {
+code[class*="language-"],
+pre[class*="language-"] {
   font-family: $monospaced-font;
+  line-height: 1.4;
 }
 
 // Headings
-h1, h2, h3, h4 {
+h1, h2, h3 {
   font-family: $title-font;
   letter-spacing: -3px;
   font-weight: 800;
+}
+
+h2, h3 {
+  font-family:$body-font;
+  // text-transform: uppercase;
 }
 
 h1 {
@@ -54,15 +62,13 @@ h1 {
 }
 
 h2 {
-  font-size: 2.827em;
+  font-size: 1.827em;
 }
 
 h3 {
-  font-size: 1.999em;
-}
-
-h4 {
   font-size: 1.414em;
+  border-left: .5em solid $brand;
+  padding-left: 1em;
 }
 
 ul, ol {

@@ -15,7 +15,6 @@ export default function Template({ data }) {
       <div className="blog-post">
         <h2 className="blog-post__title">
           {frontmatter.title}
-          <span className="blog-post__date">{dateString}</span>
         </h2>
         <div
           className="blog-post-content"
