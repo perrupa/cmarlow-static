@@ -15,9 +15,6 @@ export const PostList = ({ posts, data }) => {
             <Link to={node.frontmatter.path}>{node.frontmatter.title}</Link>
           </li>
         ))}
-        <li>
-          <Link to="/high-park/">Some photos that I took in High Park.</Link>
-        </li>
       </ol>
     </div>
   )
