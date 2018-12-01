@@ -21,7 +21,7 @@ $pmarker: 'Permanent Marker';
   $questrial
 )
 
-$title-font: $pmarker, sans-serif;
+$title-font: $playfair, sans-serif;
 $body-font: $roboto, sans-serif;
 $monospaced-font: $pt, monospace;
 
@@ -48,7 +48,7 @@ pre[class*="language-"] {
 // Headings
 h1, h2, h3 {
   font-family: $title-font;
-  letter-spacing: -3px;
+  letter-spacing: -2px;
   font-weight: 800;
 }
 

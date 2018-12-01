@@ -24,15 +24,19 @@ $code-color-variable:      $value;
 $code-color-selector:      #a6e22d;
 
 $code-tab-size:            2;
-$code-font-size:           18px	!default;
+$code-font-size:           1em !default;
 $code-line-height:	     	 1.7;
 
 @import "prism";
 
 pre[class*="language-"] {
   position: relative;
-  padding: 1em 0;
-  margin: 1em 0;
+  padding: 1.5em 0;
+  margin: 3em 0;
+  @media only screen and (max-width: 600px) {
+    margin: 0 -10%;
+    font-size: 80%;
+  }
 }
 
 pre[class*="language-"]::before {
