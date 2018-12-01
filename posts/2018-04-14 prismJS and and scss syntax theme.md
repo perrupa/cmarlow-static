@@ -26,7 +26,7 @@ plugins: [
 ]
 ```
 
-### Congatulations, you now have annotated, but unstyled, code blocks.
+### Congratulations, you now have annotated, but unstyled, code blocks.
 
 Now we need to include some CSS to apply some colors to our marked-up syntax. PrismJS has [plenty of excellent, standard themes](https://github.com/PrismJS/prism-themes), but I wanted some simpler. It needed to be easily readable without being too jarring or removed from the style and theme of this site, so I looked around for something simple to extend.
 
