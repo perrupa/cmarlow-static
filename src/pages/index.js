@@ -25,6 +25,7 @@ class IndexPage extends Component {
         </Section>
 
         <Section>
+          <h2>Social</h2>
           <SocialMediaIcons />
         </Section>
       </div>
