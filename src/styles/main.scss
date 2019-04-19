@@ -24,9 +24,13 @@ h1, h2, h3, h4 {
       right: 0;
       left: 0;
       bottom: 0.4em;
-      top: 40%;
+      top: 50%;
+      margin: 0px -10px 20px;
       background-color: lighten($brand, 20%);
-      transform: skewX(12deg) skewY(8deg)
+      transform:
+        translateX(20px)
+        skewX(12deg)
+        skewY(8deg)
     }
 
     &::after {
@@ -36,9 +40,13 @@ h1, h2, h3, h4 {
       right: 0;
       left: 0;
       bottom: 0.4em;
-      top: 50%;
+      top: 30%;
+      margin: 50px 0px 10px;
       background-color: lighten($brand, 20%);
-      transform: skewX(38deg) skewY(-13deg);
+      transform:
+        translateY(-10px)
+        skewX(13deg)
+        skewY(-12deg)
     }
   }
 }
