@@ -10,6 +10,7 @@ class IndexPage extends Component {
     return (
       <div>
         <Section>
+          <br />
           <p>
             Senior Front End Developer @ <Link href="https://shopify.ca/">Shopify</Link>.
             Amateur Photographer.
