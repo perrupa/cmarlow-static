@@ -6,9 +6,13 @@ $lato: 'Lato';
 $pt: 'PT Mono';
 $roboto: 'Roboto Mono';
 $rubik: 'Rubik';
-$questrial: 'Questrial';
 $playfair: 'Playfair Display';
-$pmarker: 'Permanent Marker';
+$montserrat: 'Montserrat Extra-Bold';
+$openSans: 'Open Sans';
+$calistoga: 'Calistoga';
+$lligat: 'Port Lligat Slab';
+$inconsolata: 'Inconsolata';
+$newFont: 'Inconsolata';
 
 //$fonts:
 @include gwf(
@@ -16,18 +20,18 @@ $pmarker: 'Permanent Marker';
   $lato,
   $pt,
   $roboto,
+  $inconsolata,
   $rubik,
-  $pmarker,
-  $questrial
+  $newFont
 )
 
-$title-font: $roboto, sans-serif;
+$title-font: $inconsolata, sans-serif;
 $body-font: $roboto, sans-serif;
-$monospaced-font: $pt, monospace;
+$monospaced-font: $inconsolata, monospace;
 
 html {
   font-family: $body-font;
-  font-size: 1.25em;
+  font-size: 1.35em;
 }
 
 body {
@@ -50,11 +54,6 @@ h1, h2, h3 {
   font-family: $title-font;
   letter-spacing: -2px;
   font-weight: 800;
-}
-
-h2, h3 {
-  font-family:$body-font;
-  // text-transform: uppercase;
 }
 
 h1 {

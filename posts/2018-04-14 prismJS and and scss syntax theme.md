@@ -30,7 +30,7 @@ plugins: [
 
 Now we need to include some CSS to apply some colors to our marked-up syntax. PrismJS has [plenty of excellent, standard themes](https://github.com/PrismJS/prism-themes), but I wanted some simpler. It needed to be easily readable without being too jarring or removed from the style and theme of this site, so I looked around for something simple to extend.
 
-[`MoOx/sass-prism-theme-base`](https://github.com/MoOx/sass-prism-theme-base) by [MoOx](https://github.com/MoOx) was a great base to build off of. The repo wasn't easily consumable by yarn, so I copied the `_prism.scss` and `s.scss` into my project to be used there. I may need to investigate sharing a variant of a base SASS PrismJS theme, as that's exactly what I was looking for.
+[`MoOx/sass-prism-theme-base`](https://github.com/MoOx/sass-prism-theme-base) by [MoOx](https://github.com/MoOx) was a great base to build off of. The repo wasn't easily consumable by yarn, so I copied the `_prism.scss` for the base styles into my project to be used there. I may need to investigate sharing a variant of a base SASS PrismJS theme, as that's exactly what I was looking for.
 
 I created a base `_syntax-theme.scss` file to contain my variables and setting overrides, it looks a little like this:
 

@@ -1,26 +1,21 @@
-import React, { Component } from 'react'
-import GatsbyLink from 'gatsby-link'
-import {brandColor} from 'styles/colors'
+import React, { Component } from "react";
+import styled from "styled-components";
+import GatsbyLink from "gatsby-link";
+import { brandColor } from "styles/colors";
 
-const LocalLink = ({children, ...props}) =>
-  <GatsbyLink
-    style={{ color: brandColor, ...props.style }}
-    {...props}
-  >
-    {children}
-  </GatsbyLink>
+const LocalLink = styled(GatsbyLink)`
+  color: ${brandColor};
+`;
 
-const ExternalLink = ({children, ...props}) =>
-  <a
-    style={{ color: brandColor, ...props.style }}
-    {...props}
-  >
-    {children}
-  </a>
+const ExternalLink = styled(props => <a {...props} />)`
+  color: ${brandColor};
+`;
 
 const Link = ({ to, href, ...props }) =>
-  (href != undefined) ?
+  href != undefined ? (
     <ExternalLink href={href} {...props} />
-    : <LocalLink to={to} {...props} />
+  ) : (
+    <LocalLink to={to} {...props} />
+  );
 
 export default Link;
