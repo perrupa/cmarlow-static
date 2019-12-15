@@ -6,7 +6,6 @@ import SocialMediaIcons from 'components/social-media-icons'
 
 class IndexPage extends Component {
   render () {
-    const posts = []
     return (
       <div>
         <Section>

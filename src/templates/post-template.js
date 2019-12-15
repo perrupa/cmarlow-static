@@ -2,20 +2,20 @@ import React from 'react'
 import 'styles/post.scss'
 
 export default function Template ({ data }) {
-  const { markdownRemark: { frontmatter, html } } = data
-  const date = new Date(Date.parse(frontmatter.date))
-  const dateString = date
-    .toLocaleDateString('en-CA')
-    .split('-')
-    // .reverse()
-    .join(' ')
+  const {
+    markdownRemark: { frontmatter, html }
+  } = data
+  // const date = new Date(Date.parse(frontmatter.date));
+  // const dateString = date
+  //   .toLocaleDateString('en-CA')
+  //   .split('-')
+  //   // .reverse()
+  //   .join(' ')
 
   return (
     <div className='blog-post-container'>
       <div className='blog-post'>
-        <h2 className='blog-post__title'>
-          {frontmatter.title}
-        </h2>
+        <h2 className='blog-post__title'>{frontmatter.title}</h2>
         <div
           className='blog-post-content'
           dangerouslySetInnerHTML={{ __html: html }}

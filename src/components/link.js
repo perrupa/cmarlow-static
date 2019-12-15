@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import GatsbyLink from 'gatsby-link'
 import { brandColor } from 'styles/colors'
@@ -12,7 +12,7 @@ const ExternalLink = styled(props => <a {...props} />)`
 `
 
 const Link = ({ to, href, ...props }) =>
-  href != undefined ? (
+  href !== undefined ? (
     <ExternalLink href={href} {...props} />
   ) : (
     <LocalLink to={to} {...props} />

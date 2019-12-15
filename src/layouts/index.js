@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import Link from 'components/link'
 import { Container } from 'components/Container'
 
 // Styles
