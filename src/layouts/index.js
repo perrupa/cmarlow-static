@@ -1,37 +1,37 @@
-import React from "react";
-import PropTypes from "prop-types";
-import Helmet from "react-helmet";
-import Link from "components/link";
-import { Container } from "components/Container";
+import React from 'react'
+import PropTypes from 'prop-types'
+import Helmet from 'react-helmet'
+import Link from 'components/link'
+import { Container } from 'components/Container'
 
 // Styles
-import "styles/main.scss";
+import 'styles/main.scss'
 
 // Components
-import { StripeTitle } from "components/header";
+import { StripeTitle } from 'components/header'
 
 const TemplateWrapper = ({ children }) => {
   return (
     <div>
       <Helmet
-        title="C:\Marlow>"
+        title='C:\Marlow>'
         meta={[
-          { name: "description", content: "" },
-          { name: "keywords", content: "" }
+          { name: 'description', content: '' },
+          { name: 'keywords', content: '' }
         ]}
       />
 
       <Container>
-        <StripeTitle to="/">Chris Marlow</StripeTitle>
+        <StripeTitle to='/'>Chris Marlow</StripeTitle>
 
         {children()}
       </Container>
     </div>
-  );
-};
+  )
+}
 
 TemplateWrapper.propTypes = {
   children: PropTypes.func
-};
+}
 
-export default TemplateWrapper;
+export default TemplateWrapper

@@ -5,15 +5,16 @@ import { PostList } from 'components/post-list'
 import SocialMediaIcons from 'components/social-media-icons'
 
 class IndexPage extends Component {
-  render() {
+  render () {
     const posts = []
     return (
       <div>
         <Section>
           <br />
           <p>
-            Senior Front End Developer @ <Link href="https://shopify.ca/">Shopify</Link>.
-            Amateur Photographer.
+            Senior Front End Developer @{' '}
+            <Link href='https://shopify.ca/'>Shopify</Link>. Amateur
+            Photographer.
           </p>
         </Section>
 
@@ -33,7 +34,7 @@ class IndexPage extends Component {
     )
   }
 
-  getPosts() {
+  getPosts () {
     const { edges } = this.props.data.allMarkdownRemark
     return Array.from(edges)
   }

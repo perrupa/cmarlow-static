@@ -26,13 +26,17 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "s": "gatsby develop",
-    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
+    "lint": "standard",
+    "format": "standard --fix",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public && echo https://perrupa.github.io/cmarlow-static/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
     "gatsby-remark-prismjs": "^1.2.24",
     "gh-pages": "^1.0.0",
-    "prettier": "^1.7.4"
+    "standard": "^14.3.1"
+  },
+  "standard": {
+    "globals": [ "graphql" ]
   }
 }

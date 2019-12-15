@@ -1,4 +1,4 @@
-const path = require("path")
+const path = require('path')
 const query = `{
   allMarkdownRemark(
     sort: { order: DESC, fields: [frontmatter___date] }
@@ -22,7 +22,7 @@ const query = `{
 exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators
 
-  const blogPostTemplate = path.resolve(`src/templates/post-template.js`)
+  const blogPostTemplate = path.resolve('src/templates/post-template.js')
 
   return graphql(query).then(result => {
     if (result.errors) {
@@ -33,7 +33,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       createPage({
         path: node.frontmatter.path,
         component: blogPostTemplate,
-        context: {}, // additional data can be passed via context
+        context: {} // additional data can be passed via context
       })
     })
   })
@@ -45,7 +45,7 @@ exports.modifyWebpackConfig = ({ config, stage }) => {
       alias: {
         styles: path.resolve(__dirname, 'src/styles/'),
         components: path.resolve(__dirname, 'src/components/'),
-        pages: path.resolve(__dirname, 'src/pages/'),
+        pages: path.resolve(__dirname, 'src/pages/')
       }
     }
   })

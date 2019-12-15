@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import Link from 'components/link'
 
-
 export const PostList = ({ posts, data }) => {
   const postTitles = posts.map(p => p.node.frontmatter.title)
 

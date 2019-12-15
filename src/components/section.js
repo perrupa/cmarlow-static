@@ -1,14 +1,14 @@
 import React from 'react'
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 const SectionTag = styled.section`
-  margin-bottom: 3em;
+  max-width: 50em;
+  margin: 0 auto 3em;
   font-size: 1.2em;
 `
 
-const Section = ({children, ...props}) =>
-  <SectionTag {...props}>
-    {children}
-  </SectionTag>
+const Section = ({ children, ...props }) => (
+  <SectionTag {...props}>{children}</SectionTag>
+)
 
 export { Section }
