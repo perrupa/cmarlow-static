@@ -1,10 +1,11 @@
-import React from 'react'
-import 'styles/post.scss'
+import React from "react";
+import "styles/post.scss";
+import { Post } from "../components/Post";
 
-export default function Template ({ data }) {
+export default function Template({ data }) {
   const {
     markdownRemark: { frontmatter, html }
-  } = data
+  } = data;
   // const date = new Date(Date.parse(frontmatter.date));
   // const dateString = date
   //   .toLocaleDateString('en-CA')
@@ -12,17 +13,7 @@ export default function Template ({ data }) {
   //   // .reverse()
   //   .join(' ')
 
-  return (
-    <div className='blog-post-container'>
-      <div className='blog-post'>
-        <h2 className='blog-post__title'>{frontmatter.title}</h2>
-        <div
-          className='blog-post-content'
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
-      </div>
-    </div>
-  )
+  return <Post title={frontmatter.title} html={html} />;
 }
 
 export const pageQuery = graphql`
@@ -37,4 +28,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
