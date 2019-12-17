@@ -140,4 +140,11 @@ function MyApp() {
 }
 ```
 
+It could be tempting to go further if you found yourself writing `toggle` functions quite a bit, and expose `toggle` along side `open` and `close`.
+```js
+const [isVisible, {open, close}] = useModalVisibility(false);
+const toggle = () => isVisible ? open() : close();
+```
+
+You wouldn't be wrong to do that, don't forget that *_we choose the abstractions we compute by_*.
 
